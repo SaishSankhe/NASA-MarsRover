@@ -3,7 +3,7 @@
     <v-app-bar class="mb-5 blue darken-1" app>
       <v-toolbar-title class="headline text-uppercase blue--text text--lighten-5">Nasa Mars Rover</v-toolbar-title>
       <v-spacer />
-      <a exact href="https://www.github.com" target="blank">
+      <a exact href="https://github.com/SaishSankhe/NASA-MarsRover" target="blank">
         <v-btn icon>
         <v-icon large color="white">mdi-github</v-icon>
       </v-btn>
