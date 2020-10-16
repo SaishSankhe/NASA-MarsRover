@@ -1,4 +1,6 @@
-NASA Mars Rover API with VueJS
+# NASA Mars Rover API with VueJS
+
+### Deployed at https://nasa-marsrover.netlify.app/
 
 ## Project setup
 ```
