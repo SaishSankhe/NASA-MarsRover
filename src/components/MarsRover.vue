@@ -28,34 +28,34 @@
         </v-flex>
       </v-layout>
       <v-layout row wrap justify-center align-center>
-        <v-flex xs3 md2 lg2 class="ma-2">
-          <v-btn block @click="chooseCam('allCam')" id="allCam" class="blue--text text--darken-4 cam">All cameras</v-btn>
+        <v-flex xs6 md2 lg2 class="ma-2">
+          <v-btn block @click="chooseCam('allCam')" id="allCam" class="blue--text text--darken-4 cam">All cams</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('fhaz')" id="fhaz" class="blue--text text--darken-4 cam">FHAZ</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('rhaz')" id="rhaz" class="blue--text text--darken-4 cam">RHAZ</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('mast')" id="mast" class="blue--text text--darken-4 cam">MAST</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('chemcam')" id="chemcam" class="blue--text text--darken-4 cam">CHEMCAM</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('mahli')" id="mahli" class="blue--text text--darken-4 cam">MAHLI</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('mardi')" id="mardi" class="blue--text text--darken-4 cam">MARDI</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('navcam')" id="navcam" class="blue--text text--darken-4 cam">NAVCAM</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('pancam')" id="pancam" class="blue--text text--darken-4 cam">PANCAM</v-btn>
         </v-flex>
-        <v-flex xs3 md2 lg2 class="ma-2">
+        <v-flex xs6 md2 lg2 class="ma-2">
           <v-btn block @click="chooseCam('minites')" id="minites" class="blue--text text--darken-4 cam">MINITES</v-btn>
         </v-flex>
       </v-layout>
@@ -68,16 +68,16 @@
       </v-layout>
       <form @submit.prevent="fetchApi">
         <v-layout row wrap justify-center align-center>
-          <v-flex xs3 md2 lg2 class="ma-2 text-center">
+          <v-flex xs12 md2 lg2 class="ma-2 text-center">
             <input id="date" type="date" v-model="dateIn" class="blue--text text--darken-4"/>
           </v-flex>
         </v-layout>
         <v-layout row wrap justify-center align-center>
-          <v-flex xs3 md2 lg2 class="ma-2">
-            <v-btn block class="mx-2 blue--text text--darken-4" type="submit">Submit</v-btn>
+          <v-flex xs12 md2 lg2 class="ma-2">
+            <v-btn block class="blue--text text--darken-4" type="submit">Submit</v-btn>
           </v-flex>
-          <v-flex xs3 md2 lg2 class="ma-2">
-            <v-btn block depressed class="ma-2 blue--text text--darken-4" @click="clearAll()">Clear all filters</v-btn>
+          <v-flex xs12 md2 lg2 class="ma-2">
+            <v-btn block depressed class="mb-2 blue--text text--darken-4" @click="clearAll()">Clear all filters</v-btn>
           </v-flex>
         </v-layout>
         <v-layout row wrap justify-center align-center>
@@ -87,10 +87,10 @@
 
       <!-- Display mission manifest data -->
       <v-layout row wrap justify-center align-center outlined>
-        <v-flex xs6 md6 lg6 class="my-2 text-center">
+        <v-flex xs12 md6 lg6 class="my-2 text-center">
           <h2>Rover status - <span class="text-decoration-underline">{{ status.toUpperCase() }}</span></h2>
         </v-flex>
-        <v-flex xs6 md6 lg6 class="my-2 text-center">
+        <v-flex xs12 md6 lg6 class="my-2 text-center">
           <h2>Total photos - <span class="text-decoration-underline">{{ totalPhotos }}</span></h2>
         </v-flex>
       </v-layout>
