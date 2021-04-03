@@ -1,5 +1,8 @@
 <template> 
     <div class="photos-grid">
+        <!-- Fetching photos condition -->
+        <h2 v-if="!info" class="text-center font-weight-light blue--text text--darken-4">Loading...</h2>
+        
         <!-- No photos condition -->
         <h2 v-if="info.length==0" class="text-center font-weight-light blue--text text--darken-4">No photos available for selected filters.</h2>
         
