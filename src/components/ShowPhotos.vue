@@ -7,7 +7,7 @@
         <ul v-else-if="info.length!=0">
             <!-- loop through the array of data -->
             <li v-for="item in info" :key="item.id">
-                <img :src = "item.img_src" width=200px height="auto" loading="lazy/>
+                <img :src = "item.img_src" width=200px height="auto" loading="lazy"/>
             </li>
         </ul>
         
