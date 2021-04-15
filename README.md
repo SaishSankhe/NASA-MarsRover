@@ -8,6 +8,11 @@ You can select the rover, the camera and the date. If images are captured from s
 
 You can also clear all the filters and hit submit button to randomly choose a date and show images (if any).
 
+## Technologies used:
+- [VueJS](https://vuejs.org/)
+- [Mars photo API](https://github.com/chrisccerami/mars-photo-api)
+- [Vuetify](https://vuetifyjs.com/en/)
+
 ## Project setup
 ```
 npm install
